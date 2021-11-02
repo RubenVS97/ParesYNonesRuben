@@ -41,12 +41,15 @@ public class ParteA {
                 }
                 break;
             case 2:
-                System.out.println("Ha elegido nones");
-                System.out.println("Jugador 1 introduzca el número de dedos deseados");
-                dedos1 = t.nextInt();
+                System.out.println("Ha elegido nones");do {
+                    System.out.println("Jugador 1 introduzca el número de dedos deseados");
+                    dedos1 = t.nextInt();
+                } while (!(dedos1 > 1 && dedos1 < 10));
 
-                System.out.println("Jugador 2 introduzca el número de dedos deseados");
-                dedos2 = t.nextInt();
+                do {
+                    System.out.println("Jugador 2 introduzca el número de dedos deseados");
+                    dedos2 = t.nextInt();
+                } while (!(dedos2 > 1 && dedos2 < 10));
                 if (!((dedos1 + dedos2) % 2 == 0)) {
                     System.out.println("Jugador 1 ha ganado la partida");
                 } else {
