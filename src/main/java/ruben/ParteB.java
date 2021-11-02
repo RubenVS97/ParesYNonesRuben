@@ -34,7 +34,7 @@ public class ParteB {
                         System.out.println(nombre1 + " introduce el número de dedos deseados");
                         dedos1 = t.nextInt();
                     } while (!(dedos1 > 1 && dedos1 < 10));
-
+                    //Random para elegir un número aleatorio entre 1-10
                     System.out.println("La máquina está creando el número");
                     dedos2 = r.nextInt(10) + 1;
                     System.out.println("El número es: " + dedos2);
@@ -52,14 +52,10 @@ public class ParteB {
                     System.out.println("¿Jugador 1 como te llamas?");
                     nombre1 = t.nextLine();
                     do {
-                        System.out.println(nombre1 + "introduce el número de dedos deseados");
+                        System.out.println(nombre1 + " introduce el número de dedos deseados");
                         dedos1 = t.nextInt();
                     } while (!(dedos1 > 1 && dedos1 < 10));
-                    do {
-                        System.out.println("Jugador 1 introduzca el número de dedos deseados");
-                        dedos1 = t.nextInt();
-                    } while (!(dedos1 > 1 && dedos1 < 10));
-
+                    
                     System.out.println("La máquina está creando el número");
                     dedos2 = r.nextInt(10) + 1;
                     System.out.println("El número es: " + dedos2);
